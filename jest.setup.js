@@ -1,3 +1,6 @@
 import 'regenerator-runtime/runtime';
-global.regeneratorRuntime = require('regenerator-runtime');
+
+if (typeof globalThis.regeneratorRuntime === 'undefined') {
+  globalThis.regeneratorRuntime = require('regenerator-runtime');
+}
 
